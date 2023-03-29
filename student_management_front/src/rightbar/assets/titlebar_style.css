@@ -1,0 +1,26 @@
+.titlebar {
+  display: grid;
+  grid-template-columns: 80% auto;
+  cursor: pointer;
+}
+.titlebar .left {
+  text-align: right;
+  font-size: 25px;
+  font-weight: bold;
+}
+.titlebar .left .name {
+  color: #3987FD;
+}
+.titlebar .left .post {
+  color: grey;
+}
+.titlebar .right img {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 3px 10px rgb(187, 187, 187);
+  border-radius: 100px;
+  transition: 0.25s;
+}
+.titlebar .right img:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=titlebar_style.css.map */

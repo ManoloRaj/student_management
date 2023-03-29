@@ -1,0 +1,17 @@
+.pagination_container{
+    margin-top: 10%;
+    .p1{
+        background-color: white;
+        width: min-content;
+        padding: 10px;
+        display: inline;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.25s;
+        color: grey;
+    }
+    .p1:hover{
+        transform: scale(1.2);
+    }
+}

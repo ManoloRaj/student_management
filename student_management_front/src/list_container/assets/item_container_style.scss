@@ -1,0 +1,71 @@
+.item_container {
+    display: grid;
+    grid-template-columns: 60% auto;
+    margin-top: 20px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #3485FF;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.25s;
+
+    .ic1 {
+        display: grid;
+        grid-template-rows: 85% auto;
+
+        .title {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .place_number {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(6, calc(100% / 6));
+
+            .item_place {
+                height: 3px;
+
+                background-color: rgba(255, 255, 255, 0.418);
+                margin: 3px;
+            }
+
+            .active {
+                background-color: white;
+            }
+        }
+    }
+
+    .ic2 {
+
+        .right {
+            float: right;
+            display: grid;
+            grid-template-rows: 50% auto;
+
+            .enroll_number {
+                border-radius: 5px;
+                background-color: white;
+                width: min-content;
+                height: min-content;
+                padding: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                color: grey;
+            }
+
+            .enroll {
+                margin-top: 20px;
+                color: white;
+                border-bottom: 2px solid white;
+            }
+        }
+
+    }
+}
+
+
+.item_container:hover {
+    transform: scale(0.98);
+}
