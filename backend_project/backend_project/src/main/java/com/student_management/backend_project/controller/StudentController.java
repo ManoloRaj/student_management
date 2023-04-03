@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("student")
+@CrossOrigin(origins = "http://localhost:3000")
 public class StudentController {
     @Autowired
     private StudentServiceImpl studentService;

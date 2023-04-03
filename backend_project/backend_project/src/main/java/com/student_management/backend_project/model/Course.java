@@ -15,6 +15,8 @@ public class Course {
     private Long id_course;
 
     private String course_name;
+
+    private String color_code;
     @OneToOne
     @JoinColumn(name = "id_room")
     private Room room;
@@ -47,6 +49,14 @@ public class Course {
 
     public void setCourse_name(String course_name) {
         this.course_name = course_name;
+    }
+
+    public String getColor_code() {
+        return color_code;
+    }
+
+    public void setColor_code(String color_code) {
+        this.color_code = color_code;
     }
 
     public Room getRoom() {
